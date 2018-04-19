@@ -10,6 +10,7 @@ pipeline {
     stage('Say Hello') {
       steps {
         echo "Hello ${params.Name}!"
+        echo java-version
         echo "${TEST_USER_USR}"
         echo "${TEST_USER_PSW}"
       }
